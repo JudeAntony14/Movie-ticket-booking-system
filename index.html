@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>CinemaWorld</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,33 +11,41 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="movies.html">Movies</a>
-        <a href="#">Contact</a>
+        <button id="themeToggle">Theme</button>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Book Your Movie Tickets Online</h1>
-    <p>Experience seamless ticket booking</p>
-    <button onclick="location.href='movies.html'">Book Now</button>
+    <h1>Experience Movies Like Never Before</h1>
+    <p>Book tickets instantly and reserve your favourite seats</p>
+    <a href="movies.html" class="primary">Book Now</a>
 </section>
 
 <section class="section">
-    <h2>Now Showing</h2>
+    <h2>Featured Movies</h2>
     <div class="movies-grid">
         <div class="movie-card">
-            <img src="https://via.placeholder.com/300x400">
-            <h3>Movie 1</h3>
-            <button onclick="location.href='details.html'">View</button>
+            <img src="https://source.unsplash.com/400x600/?movie,action">
+            <h3>Action Blockbuster</h3>
+            <a href="details.html" class="primary">View Details</a>
         </div>
+
         <div class="movie-card">
-            <img src="https://via.placeholder.com/300x400">
-            <h3>Movie 2</h3>
-            <button onclick="location.href='details.html'">View</button>
+            <img src="https://source.unsplash.com/400x600/?cinema,drama">
+            <h3>Drama Story</h3>
+            <a href="details.html" class="primary">View Details</a>
         </div>
+
         <div class="movie-card">
-            <img src="https://via.placeholder.com/300x400">
-            <h3>Movie 3</h3>
-            <button onclick="location.href='details.html'">View</button>
+            <img src="https://source.unsplash.com/400x600/?movie,thriller">
+            <h3>Thriller Night</h3>
+            <a href="details.html" class="primary">View Details</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://source.unsplash.com/400x600/?film,romance">
+            <h3>Romantic Escape</h3>
+            <a href="details.html" class="primary">View Details</a>
         </div>
     </div>
 </section>
@@ -46,5 +54,6 @@
     © 2025 CinemaWorld
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

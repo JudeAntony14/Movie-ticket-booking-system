@@ -8,47 +8,54 @@
 
 <header>
     <h2>CinemaWorld</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <button id="themeToggle">Theme</button>
+    </nav>
 </header>
 
 <section class="section">
+
+    <h2>Selected Time: <span id="showTimeDisplay"></span></h2>
+
     <div class="screen">SCREEN THIS SIDE</div>
 
     <div class="seat-grid">
-        <div class="seat">A1</div>
-        <div class="seat">A2</div>
-        <div class="seat booked">A3</div>
-        <div class="seat">A4</div>
-        <div class="seat">A5</div>
+        <!-- 80 seats -->
+        <!-- Just replicate visually -->
+        <!-- Row A -->
+        <div class="seat"></div><div class="seat"></div><div class="seat booked"></div>
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div>
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div>
+        <div class="seat"></div>
 
-        <div class="seat">B1</div>
-        <div class="seat">B2</div>
-        <div class="seat">B3</div>
-        <div class="seat booked">B4</div>
-        <div class="seat">B5</div>
+        <!-- Row B -->
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div>
+        <div class="seat"></div><div class="seat booked"></div><div class="seat"></div>
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div>
+        <div class="seat"></div>
 
-        <div class="seat">C1</div>
-        <div class="seat">C2</div>
-        <div class="seat">C3</div>
-        <div class="seat">C4</div>
-        <div class="seat">C5</div>
-
-        <div class="seat">D1</div>
-        <div class="seat">D2</div>
-        <div class="seat">D3</div>
-        <div class="seat">D4</div>
-        <div class="seat">D5</div>
+        <!-- Row C -->
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div>
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div>
+        <div class="seat"></div><div class="seat booked"></div><div class="seat"></div>
+        <div class="seat"></div>
     </div>
 
-    <div class="legend">
-        <p>Green: Available | Red: Booked</p>
-    </div>
+    <p>Total: ₹<span id="total">0</span></p>
 
-    <button class="primary" onclick="location.href='summary.html'">Proceed to Summary</button>
+    <a href="summary.html" class="primary">Proceed to Summary</a>
+
 </section>
 
 <footer>
     © 2025 CinemaWorld
 </footer>
 
+<script src="js/script.js"></script>
+<script>
+document.getElementById("showTimeDisplay").textContent =
+    localStorage.getItem("showTime");
+</script>
 </body>
 </html>

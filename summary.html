@@ -8,18 +8,16 @@
 
 <header>
     <h2>CinemaWorld</h2>
+    <button id="themeToggle">Theme</button>
 </header>
 
 <section class="section">
     <div class="summary-card">
-        <div>Movie Name: Movie Title</div>
-        <div>Theatre: CinemaWorld Hall 1</div>
-        <div>Show Time: 6:00 PM</div>
-        <div>Selected Seats: A2, A4</div>
-        <div>Number of Tickets: 2</div>
-        <div>Total Amount: ₹400</div>
+        <div>Show Time: <span id="summaryTime"></span></div>
+        <div>Seats Selected: <span id="summarySeats"></span></div>
+        <div>Total Amount: ₹<span id="summaryTotal"></span></div>
         <br>
-        <button class="primary" onclick="location.href='confirmation.html'">Confirm Booking</button>
+        <a href="confirmation.html" class="primary">Confirm Booking</a>
     </div>
 </section>
 
@@ -27,5 +25,6 @@
     © 2025 CinemaWorld
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

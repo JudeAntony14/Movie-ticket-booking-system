@@ -8,24 +8,30 @@
 
 <header>
     <h2>CinemaWorld</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <button id="themeToggle">Theme</button>
+    </nav>
 </header>
 
 <section class="section details-container">
-    <img src="https://via.placeholder.com/300x400">
+    <img src="https://source.unsplash.com/500x700/?cinema,film">
     <div>
-        <h2>Movie Title</h2>
-        <p>Genre: Action</p>
-        <p>Duration: 2h 15m</p>
-        <p>Rating: 8.5/10</p>
-        <p>Description of the movie goes here.</p>
-        <div class="show-times">
-            <button>10:00 AM</button>
-            <button>1:00 PM</button>
-            <button>6:00 PM</button>
-            <button>9:00 PM</button>
-        </div>
-        <br>
-        <button class="primary" onclick="location.href='seats.html'">Select Seats</button>
+        <h2>Edge of Tomorrow</h2>
+        <p>Genre: Action / Sci-Fi</p>
+        <p>Duration: 2h 20m</p>
+        <p>Rating: 8.7/10</p>
+        <p>An action-packed journey through time and survival.</p>
+
+        <h3>Select Show Time</h3>
+        <div class="time">10:00 AM</div>
+        <div class="time">1:00 PM</div>
+        <div class="time">6:00 PM</div>
+        <div class="time">9:00 PM</div>
+
+        <br><br>
+        <a href="seats.html" class="primary">Select Seats</a>
     </div>
 </section>
 
@@ -33,5 +39,6 @@
     © 2025 CinemaWorld
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
