@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CinemaWorld</title>
-    <link rel="stylesheet" href="css/style.css">
+<title>Movies</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
-    <h2>CinemaWorld</h2>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="movies.html">Movies</a>
-        <button id="themeToggle">Theme</button>
-    </nav>
+<h2>CinemaWorld</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="movies.html">Movies</a>
+<a href="login.html" id="loginLink">Login</a>
+
+<div class="profile" id="profileBox">
+<span id="userDisplay"></span>
+
+<div class="profile-menu">
+<p>Account</p>
+<p>Settings</p>
+<p>Preferences</p>
+<p onclick="logout()">Logout</p>
+</div>
+</div>
+
+</nav>
 </header>
 
-<section class="hero">
-    <h1>Experience Movies Like Never Before</h1>
-    <p>Book tickets instantly and reserve your favourite seats</p>
-    <a href="movies.html" class="primary">Book Now</a>
-</section>
-
 <section class="section">
-    <h2>Featured Movies</h2>
-    <div class="movies-grid">
-        <div class="movie-card">
-            <img src="https://source.unsplash.com/400x600/?movie,action">
-            <h3>Action Blockbuster</h3>
-            <a href="details.html" class="primary">View Details</a>
-        </div>
 
-        <div class="movie-card">
-            <img src="https://source.unsplash.com/400x600/?cinema,drama">
-            <h3>Drama Story</h3>
-            <a href="details.html" class="primary">View Details</a>
-        </div>
+<h2>Now Showing</h2>
 
-        <div class="movie-card">
-            <img src="https://source.unsplash.com/400x600/?movie,thriller">
-            <h3>Thriller Night</h3>
-            <a href="details.html" class="primary">View Details</a>
-        </div>
+<input id="searchMovie" placeholder="Search movies..." onkeyup="searchMovies()">
 
-        <div class="movie-card">
-            <img src="https://source.unsplash.com/400x600/?film,romance">
-            <h3>Romantic Escape</h3>
-            <a href="details.html" class="primary">View Details</a>
-        </div>
-    </div>
+<br><br>
+
+<div class="movies-grid">
+
+<div class="movie-card">
+<img src="images/batman.jpeg">
+<h3>The Batman</h3>
+<a href="details.html?movie=batman" class="primary">More Info</a>
+</div>
+
+<div class="movie-card">
+<img src="images/interstellar.jpeg">
+<h3>Interstellar</h3>
+<a href="details.html?movie=interstellar" class="primary">More Info</a>
+</div>
+
+<div class="movie-card">
+<img src="images/inception.jpeg">
+<h3>Inception</h3>
+<a href="details.html?movie=inception" class="primary">More Info</a>
+</div>
+
+<div class="movie-card">
+<img src="images/joker.jpeg">
+<h3>Joker</h3>
+<a href="details.html?movie=joker" class="primary">More Info</a>
+</div>
+
+</div>
+
 </section>
 
 <footer>
-    © 2025 CinemaWorld
+© 2025 CinemaWorld
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
